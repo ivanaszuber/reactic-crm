@@ -3,6 +3,8 @@
  */
 import React from 'react';
 import Sidebar from '../Sidebar/Sidebar'
+import Router from 'react-router';
+var { Route, DefaultRoute, RouteHandler, Link } = Router;
 
 export default class App extends React.Component{
     render() {
@@ -10,6 +12,7 @@ export default class App extends React.Component{
 
             <div>
                 <Sidebar />
+                <RouteHandler/>
             </div>
         )
     }
