@@ -9,10 +9,13 @@ import SidebarItem from '../SidebarItem/SidebarItem';
 class Sidebar  extends React.Component {
     render() {
         return (
-            <div>
-                <div className='sidebar-header'>PAGES</div>
+            <div id="sidebar">
                 <div className='sidebar-nav-container'>
-                        <SidebarNav style={{marginBottom: 0}}>
+                        <SidebarNav style={{marginBottom: 0}} className="sidebar-nav">
+                            <SidebarItem glyph='icon-fontello-gauge' name='Blank' href='/' />
+                            <SidebarItem glyph='icon-fontello-gauge' name='Blank' href='/' />
+                            <SidebarItem glyph='icon-fontello-gauge' name='Blank' href='/' />
+                            <SidebarItem glyph='icon-fontello-gauge' name='Blank' href='/' />
                             <SidebarItem glyph='icon-fontello-gauge' name='Blank' href='/' />
                         </SidebarNav>
                 </div>
